@@ -39,10 +39,13 @@ This is a full-stack media streaming web application that allows users to upload
    ```bash
    cd media_frontend
 2. Install dependencies:
+    ```bash
     npm install
 3. Create a .env file in the root of the frontend and add the backend URL:
+    ```bash
     REACT_APP_BACKEND_URL=http://127.0.0.1:8000
 4. Run the development server:
+    ```bash
     npm start
 
 ### Backend Setup
@@ -51,14 +54,20 @@ This is a full-stack media streaming web application that allows users to upload
    ```bash
    cd media_backend
 2. Create a virtual environment and activate it:
+    ```bash
     python -m venv venv
+    ```bash
     source venv/bin/activate  # On Linux/Mac
+    ```bash
     venv\Scripts\activate     # On Windows
 3. Install dependencies:
+    ```bash
     pip install -r requirements.txt
 4. Create a .env file in the backend directory with the following content:
+    ```bash
     DATABASE_URL=sqlite:///./media.db
 5.  Manually create the SQLite database schema and media table using the following commands:
+    ```bash
     sqlite3 media.db
     CREATE TABLE media (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -67,6 +76,7 @@ This is a full-stack media streaming web application that allows users to upload
     uploaded_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 6. Run the backend server:
+    ```bash
     uvicorn app:app --reload
 
 #### Deployment 

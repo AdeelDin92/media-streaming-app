@@ -74,7 +74,7 @@ This is a full-stack media streaming web application that allows users to upload
     filename TEXT NOT NULL,
     filepath TEXT NOT NULL,
     uploaded_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
+    );
 6. Run the backend server:
     ```bash
     uvicorn app:app --reload
